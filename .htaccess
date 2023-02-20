@@ -1,0 +1,6 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^pets/read$ pets/read.php [NC,L]
+RewriteRule ^pets/read/([0-9_-]*)$ pets/read.php?id=$1 [NC,L]
+RewriteRule ^pets/create$ pets/create.php [NC,L]
+RewriteRule ^pets/update/([0-9_-]*)$ pets/update.php?id=$1 [NC,L]
+RewriteRule ^pets/delete/([0-9_-]*)$ pets/delete.php?id=$1 [NC,L]
